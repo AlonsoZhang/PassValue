@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController">
+            <connections>
+                <outlet property="KVOMethod" destination="KFI-k3-H3Q" id="viE-jk-cZA"/>
+                <outlet property="attributeMethod" destination="IaZ-bA-nER" id="9pQ-BG-cKk"/>
+                <outlet property="blockMethod" destination="Kkz-gb-nC4" id="dwe-sE-hep"/>
+                <outlet property="classMethod" destination="GTL-UU-WFz" id="hsH-9n-xng"/>
+                <outlet property="delegateMethod" destination="WPa-F0-bKT" id="Q04-5F-jcU"/>
+                <outlet property="nameTextField" destination="a4h-0c-noO" id="6FJ-gF-dwO"/>
+                <outlet property="notificationMethod" destination="DNB-P3-iDG" id="1iQ-R2-NJV"/>
+                <outlet property="shareapplicationMethod" destination="jio-5K-Md4" id="zT3-Ye-uwV"/>
+                <outlet property="singletonMethod" destination="vmT-gJ-Y95" id="qKc-UX-jxM"/>
+                <outlet property="userDefaultMethod" destination="gON-Ag-C6t" id="nLm-X1-EWB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPa-F0-bKT">
+                    <rect key="frame" x="85" y="117" width="150" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                    <state key="normal" title="delegate">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="delegateMethod:" destination="-1" eventType="touchUpInside" id="c9J-gj-HGt"/>
+                    </connections>
+                </button>
+                <navigationBar appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cF6-eu-lhP">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="Second View" id="ilQ-Lk-GtS">
+                            <barButtonItem key="leftBarButtonItem" title="Cancel" id="kaI-qf-Ofv">
+                                <connections>
+                                    <action selector="Cancel:" destination="-1" id="RXD-GI-8ED"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="input your message" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a4h-0c-noO">
+                    <rect key="frame" x="20" y="79" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                </textField>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNB-P3-iDG">
+                    <rect key="frame" x="85" y="161" width="150" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                    <state key="normal" title="notification">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="notificationMethod:" destination="-1" eventType="touchUpInside" id="8p0-Vh-SS1"/>
+                    </connections>
+                </button>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkz-gb-nC4">
+                    <rect key="frame" x="85" y="205" width="150" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                    <state key="normal" title="block">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="blockMethod:" destination="-1" eventType="touchUpInside" id="fNz-eZ-Vsg"/>
+                    </connections>
+                </button>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gON-Ag-C6t">
+                    <rect key="frame" x="85" y="249" width="150" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                    <state key="normal" title="userDefault">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userDefaultMethod:" destination="-1" eventType="touchUpInside" id="kCO-3C-9ay"/>
+                    </connections>
+                </button>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmT-gJ-Y95">
+                    <rect key="frame" x="85" y="293" width="150" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                    <state key="normal" title="singleton">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="singletonMethod:" destination="-1" eventType="touchUpInside" id="8bX-Ob-6oD"/>
+                    </connections>
+                </button>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaZ-bA-nER">
+                    <rect key="frame" x="85" y="337" width="150" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                    <state key="normal" title="attribute">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="attributeMethod:" destination="-1" eventType="touchUpInside" id="bg8-G7-c3E"/>
+                    </connections>
+                </button>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jio-5K-Md4">
+                    <rect key="frame" x="73" y="381" width="174" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                    <state key="normal" title="shareapplication">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shareapplicationMethod:" destination="-1" eventType="touchUpInside" id="AQu-z7-heZ"/>
+                    </connections>
+                </button>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFI-k3-H3Q">
+                    <rect key="frame" x="137" y="425" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                    <state key="normal" title="KVO">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="KVOMethod:" destination="-1" eventType="touchUpInside" id="m2K-WT-Lga"/>
+                    </connections>
+                </button>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTL-UU-WFz">
+                    <rect key="frame" x="129" y="463" width="63" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                    <state key="normal" title="Class">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="classMethod:" destination="-1" eventType="touchUpInside" id="HFI-0M-xpS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.98696750710000003" green="1" blue="0.96724719660000003" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
